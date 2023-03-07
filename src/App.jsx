@@ -34,8 +34,6 @@ function App() {
         setCheck3(true);
       } else if (positionTitle3 > revealPosition) setCheck3(false);
 
-      console.log(positionTitle3);
-      console.log(revealPosition);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -45,7 +43,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title-app">Text Reveal</h1>
       <div className="container-image">
         <img src="/img/anime-1.jpg" alt="" />
         <div className="box-text" ref={refTitle1}>
